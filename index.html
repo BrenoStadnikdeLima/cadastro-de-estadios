@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Estádios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro de Estádios</h1>
+    <form id="stadium-form">
+        <label for="stadium-name">Nome do Estádio:</label>
+        <input type="text" id="stadium-name" required>
+        
+        <label for="club">Clube:</label>
+        <input type="text" id="club" required>
+        
+        <label for="nickname">Apelido:</label>
+        <input type="text" id="nickname" required>
+        
+        <label for="city">Cidade:</label>
+        <input type="text" id="city" required>
+        
+        <button type="submit">Adicionar</button>
+    </form>
+    
+    <h2>Lista de Estádios Cadastrados</h2>
+    <div id="message" class="message"></div>
+    <table id="stadium-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Clube</th>
+                <th>Apelido</th>
+                <th>Cidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas de estádios cadastrados serão adicionadas aqui -->
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
